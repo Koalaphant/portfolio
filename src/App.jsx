@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Nav from "./components/Nav/Nav";
-import Home from "./components/HomePage/Home";
+import Home from "./pages/Home";
 import "../main.css";
 
 function App() {
