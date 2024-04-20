@@ -1,3 +1,20 @@
-body {
-    background: #581845;
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
+
+body {
+    background: #002b3c;
+    font-family: Inter, arial, sans-serif;
+    color: beige;
+    margin: 20px 20px 0px 20px;
+}
+
+@font-face {
+    font-family: "Inter";   /*Can be any text*/
+    src: local("Inter"),
+      url("./src/fonts/InterVariable.ttf") format("truetype");
+  }
+
+

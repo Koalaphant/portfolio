@@ -1,0 +1,95 @@
+  /* ==================== HOME PAGE STYLE ===================== */
+  
+#full-name{
+    font-size: 2.1em;
+    font-weight: 500;
+}
+
+#job-title {
+    font-weight: 400;
+    letter-spacing: -0.2px;
+    font-size: 1.1em;
+    margin: 5px 0px 20px 0px;
+}
+
+#profile-blurb {
+    font-weight: 300;
+    line-height: 1.4em;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    color: beige;
+    font-size: 1.8em;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.2s ease-in-out; /* Adding transition for smooth animation */
+}
+
+.social-links:hover {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transform: scale(1.1); /* Grow slightly larger on hover */
+}
+
+#about-info {
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+.about-text {
+    margin: 20px 0px 20px 0px;
+}
+
+.section-titles {
+    font-size: 0.9em;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    margin-top: 60px;
+
+}
+
+h4 {
+    font-weight: 500;
+    font-family: Inter, Helvetica, sans-serif;
+    margin-bottom: 15px;
+}
+
+#project-description {
+    font-weight: 300;
+    line-height: 1.5em;
+    margin-bottom: 15px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to next line if content overflows */
+    justify-content: flex-start; /* Align items from start */
+}
+
+.skills {
+    display: inline-block; /* Make each skill item inline-block */
+    margin-right: 10px; /* Add some space between skills */
+    border: 1px solid white;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    font-size: 0.76em;
+}
+
+.project-image {
+    width: 100%;
+    margin: 15px 0px;
+}
+
+.project-title {
+    text-decoration: none;
+    color: beige;
+    
+}
+
+.project-card {
+    margin-bottom: 30px;
+}
