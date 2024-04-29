@@ -1,22 +1,43 @@
   /* ==================== HOME PAGE STYLE ===================== */
   
-#full-name{
+  #full-name{
     font-size: 2.1em;
     font-weight: 500;
 }
 
-#job-title {
+
+
+
+.name-and-bio {
+    display: flex;
+}
+
+.name-and-job-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.job-title {
     font-weight: 400;
-    letter-spacing: -0.2px;
     font-size: 1.1em;
     margin: 5px 0px 20px 0px;
 }
 
-#profile-blurb {
+#job-title-intro {
     font-weight: 300;
-    line-height: 1.4em;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
+
+.prof-pic{
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    border: 2px solid white;
+    margin-bottom: 10px;
+}
+
 
 .social-links {
     color: beige;
@@ -37,17 +58,24 @@
     line-height: 1.5em;
 }
 
+.professional-experience-desc{
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
 .about-text {
     margin: 20px 0px 20px 0px;
 }
 
 .section-titles {
-    font-size: 0.9em;
+    font-size: 1em;
     text-transform: uppercase;
     font-weight: 500;
     letter-spacing: 1px;
-    margin-bottom: 40px;
-    margin-top: 60px;
+    margin: 30px 0px;
+    padding: 10px 20px;
+    background-color: #5100a7a2;
+    text-align: center;
 
 }
 
@@ -72,24 +100,69 @@ h4 {
 .skills {
     display: inline-block; /* Make each skill item inline-block */
     margin-right: 10px; /* Add some space between skills */
-    border: 1px solid white;
+    background-color: #5100a7a2;
     padding: 5px 15px;
     margin-bottom: 10px;
     border-radius: 20px;
     font-size: 0.76em;
 }
 
+.arrow-animation {
+    color: #6d00e2;
+}
+
+
+
+
+
 .project-image {
-    width: 100%;
+    width: 50%;
     margin: 15px 0px;
 }
 
 .project-title {
     text-decoration: none;
-    color: beige;
-    
+    color: beige;   
+}
+
+.project-title h4 {
+    font-weight: 600;
 }
 
 .project-card {
     margin-bottom: 30px;
 }
+
+
+@media (min-width: 1024px) {
+    .intro-section{
+        display: flex;
+    }
+
+    .name-section{
+        flex: 1;
+    }
+
+    .about-text{
+        flex: 2;
+        margin-left: 40px;
+        margin-top: 0px;
+    }
+
+}
+
+@media (min-width: 1440px) {
+    .about-text {
+        margin-left: 30px;
+    }
+
+    
+
+    #job-title-intro {
+        margin: 10px 0px 10px 0px;
+    }
+}
+
+
+
+

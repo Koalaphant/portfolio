@@ -1,11 +1,14 @@
+import parse from "html-react-parser";
+
 const ProjectCard = ({ project }) => {
   return (
     <div className="project-card">
       <a className="project-title" target="_blank" href={project.site_url}>
-        <h4>{project.title}</h4>
+        <h4>
+          {project.title} <span className="arrow-animation">↗</span>
+        </h4>
       </a>
-
-      <p id="project-description">{project.description}</p>
+      <div id="project-description">{parse(project.description)}</div>
       <div className="skills-list">
         {project.languages_used.map((language) => {
           return (
