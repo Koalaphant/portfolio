@@ -1,8 +1,30 @@
-# React + Vite
+# My Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+Welcome to my portfolio! I'm Andrew Ward-Jones, a Junior Full Stack Engineer who recently graduated from the Northcoders Full Stack Coding Bootcamp. This portfolio showcases my professional experience, skills, and projects developed during my training.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+- Node.js
+- React.js
+- React Native
+- Express.js
+- PostgreSQL
+- Supabase
+- Firebase
+
+## About Me
+
+I embarked on a coding journey after completing the Northcoders Full Stack Coding Bootcamp. My portfolio reflects my commitment to mastering various technologies and showcases my proficiency in both frontend and backend development.
+
+## Professional Experience
+
+During my time at Northcoders, I gained hands-on experience in solo and paired programming, completing real-world projects that equipped me with essential skills for a professional environment. My journey included mastering JavaScript fundamentals, backend development with Node.js and Express, frontend development with React.js, and collaborative project work.
+
+## Projects
+
+The portfolio displays a collection of projects I worked on during my training. Each project highlights my skills and creativity in building web applications using a variety of technologies.
