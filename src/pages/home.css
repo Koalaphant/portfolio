@@ -12,6 +12,13 @@
     display: flex;
 }
 
+.job-date{
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
 .name-and-job-title{
     display: flex;
     flex-direction: column;
@@ -20,14 +27,22 @@
 }
 
 .job-title {
-    font-weight: 400;
+    font-weight: 800;
     font-size: 1.1em;
-    margin: 5px 0px 20px 0px;
+    margin-bottom: 5px;
+    background-color: rgba(156, 81, 236, 0.408);
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 #job-title-intro {
     font-weight: 300;
     margin-bottom: 10px;
+}
+
+.paragraph-style{
+    margin-bottom: 20px;
 }
 
 .prof-pic{
@@ -109,6 +124,7 @@ h4 {
 
 .arrow-animation {
     color: #6d00e2;
+    margin-right: 10px;
 }
 
 
@@ -116,16 +132,51 @@ h4 {
 
 
 .project-image {
-    width: 50%;
+    width: 100%;
     margin: 15px 0px;
+    transition: transform 0.3s ease; /* Smooth transition effect */
 }
+
+.project-image:hover {
+    transform: scale(1.02); /* Slightly grow the image */
+}
+
+.icons a {
+    transition: transform 0.3s ease;
+  }
+  
+  .icons a:hover {
+    transform: scale(1.2);
+  }
+
 
 .project-title {
+    display: inline-flex;
+    align-items: center;
     text-decoration: none;
-    color: beige;   
+    color: beige; /* or inherit if you prefer to use a different color */
+    font-size: 1.7rem;
 }
 
-.project-title h4 {
+.title-container{
+    display: flex; 
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.icons {
+    display: flex;
+    font-size: 1.2em;
+}
+
+.icons a{
+    margin-left: 10px;
+    color: #b168ffd9;
+
+}
+
+.project-title h3 {
     font-weight: 600;
 }
 

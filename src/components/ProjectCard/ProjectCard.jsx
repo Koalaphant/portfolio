@@ -1,14 +1,29 @@
 import parse from "html-react-parser";
+import { faGithub } from "@fortawesome/free-brands-svg-icons/faGithub";
+import { faComputer } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ProjectCard = ({ project }) => {
   return (
     <div className="project-card">
-      <a className="project-title" target="_blank" href={project.site_url}>
-        <h4>
-          {project.title} <span className="arrow-animation">↗</span>
-        </h4>
-      </a>
-      <div id="project-description">{parse(project.description)}</div>
+      <div className="title-container">
+        <h3 className="project-title">{project.name}</h3>
+        <div className="icons">
+          <a href={project.git_url}>
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
+          {project.site_url && (
+            <a href={project.site_url}>
+              <FontAwesomeIcon icon={faComputer} />
+            </a>
+          )}
+        </div>
+      </div>
+
+      <div id="project-description">{project.description}</div>
+      <div className="additional-info">
+        {project.additional_info && project.additional_info}
+      </div>
       <div className="skills-list">
         {project.languages_used.map((language) => {
           return (
@@ -18,7 +33,7 @@ const ProjectCard = ({ project }) => {
           );
         })}
       </div>
-      <a href={project.site_url}>
+      <a href={project.git_url}>
         <img
           className="project-image"
           target="_blank"
