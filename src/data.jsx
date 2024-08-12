@@ -115,4 +115,22 @@ const projects = [
   },
 ];
 
-export default projects;
+const skills = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "TypeScript",
+  "Jest",
+  "Node.js",
+  "React",
+  "Next.js",
+  "React Native",
+  "Express.js",
+  "PSQL",
+  "Supabase",
+  "Firebase",
+  "Tailwind",
+  "Vue.js",
+];
+
+export { projects, skills };

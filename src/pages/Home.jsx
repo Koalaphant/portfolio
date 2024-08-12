@@ -6,7 +6,7 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import "./home.css";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import profileImg from "../assets/andrew-memoji.png";
-import projects from "../data.jsx";
+import { projects, skills } from "../data.jsx";
 import ProjectCard from "../components/ProjectCard/ProjectCard.jsx";
 
 const Home = () => {
@@ -46,20 +46,11 @@ const Home = () => {
 
             <section className="skills-list">
               <ul>
-                <li className="skills">HTML</li>
-                <li className="skills">CSS</li>
-                <li className="skills">JavaScript</li>
-                <li className="skills">TypeScript</li>
-                <li className="skills">Jest</li>
-                <li className="skills">Node.js</li>
-                <li className="skills">React</li>
-                <li className="skills">Next.js</li>
-                <li className="skills">React Native</li>
-                <li className="skills">Express.js</li>
-                <li className="skills">PSQL</li>
-                <li className="skills">Supabase</li>
-                <li className="skills">Firebase</li>
-                <li className="skills">Tailwind</li>
+                {skills.map((skill, index) => (
+                  <li className="skills" key={index}>
+                    {skill}
+                  </li>
+                ))}
               </ul>
             </section>
           </section>
@@ -67,10 +58,11 @@ const Home = () => {
             <h2 className="section-titles">About</h2>
 
             <p id="about-info">
-              Hello and welcome to my portfolio! I have recently graduated from
-              the Northcoders Full Stack Coding Bootcamp and with it I have
-              gained a vast amount of knowledge to take my coding journey to the
-              next level.
+              Hello! I’m Andrew Ward-Jones, a Junior Full Stack Engineer with a
+              passion for creating dynamic and user-friendly applications. I
+              recently graduated from the Northcoders Full Stack Coding
+              Bootcamp, where I gained hands-on experience in both front-end and
+              back-end development.
             </p>
             <h2 className="section-titles">Professional Experience</h2>
 
@@ -149,7 +141,7 @@ const Home = () => {
               <div className="project-grid">
                 <h2 className="section-titles">Projects</h2>
                 {projects.map((project, index) => (
-                  <ProjectCard project={project} />
+                  <ProjectCard key={index} project={project} />
                 ))}
               </div>
             </div>
