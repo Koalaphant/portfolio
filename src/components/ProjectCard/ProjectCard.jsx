@@ -2,6 +2,7 @@ import parse from "html-react-parser";
 import { faGithub } from "@fortawesome/free-brands-svg-icons/faGithub";
 import { faComputer } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMousePointer } from "@fortawesome/free-solid-svg-icons";
 
 const ProjectCard = ({ project }) => {
   return (
@@ -33,12 +34,14 @@ const ProjectCard = ({ project }) => {
           );
         })}
       </div>
-      <a href={project.git_url}>
+      <a href={project.git_url} className="project-image-container">
         <img
           className="project-image"
           target="_blank"
           src={project.img_url}
-        ></img>
+          alt="Project screenshot"
+        />
+        <FontAwesomeIcon className="svg-overlay" icon={faMousePointer} />
       </a>
     </div>
   );

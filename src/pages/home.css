@@ -202,6 +202,38 @@ h4 {
 
 }
 
+.project-image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .project-image {
+    transition: filter 0.3s ease; /* Only filter transition needed */
+    width: 100%;
+    display: block;
+  }
+  
+  .project-image-container:hover .project-image {
+    filter: brightness(40%); /* Darkens the image */
+  }
+  
+  .svg-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: white;
+    font-size: 5em;
+  }
+  
+  .project-image-container:hover .svg-overlay {
+    opacity: 1; /* Makes the SVG visible */
+  }
+
+
+
 @media (min-width: 1440px) {
     .about-text {
         margin-left: 30px;
