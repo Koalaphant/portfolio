@@ -205,31 +205,35 @@ h4 {
 .project-image-container {
     position: relative;
     display: inline-block;
+    overflow: hidden; /* Ensures the image does not overflow the container */
   }
   
   .project-image {
-    transition: filter 0.3s ease; /* Only filter transition needed */
+    transition: filter 0.3s ease, transform 0.3s ease; /* Smooth transitions for both filter and transform */
     width: 100%;
     display: block;
   }
   
   .project-image-container:hover .project-image {
-    filter: brightness(40%); /* Darkens the image */
+    filter: brightness(40%); /* Darkens the image on hover */
+    transform: scale(1.05); /* Slightly grows the image */
   }
   
   .svg-overlay {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0); /* Initially scale to 0 */
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for opacity and scale */
     color: white;
     font-size: 5em;
+    pointer-events: none; /* Ensures the overlay doesn't interfere with mouse events */
   }
   
   .project-image-container:hover .svg-overlay {
-    opacity: 1; /* Makes the SVG visible */
+    opacity: 1; /* Makes the SVG visible on hover */
+    transform: translate(-50%, -50%) scale(1); /* Scales up to its original size */
   }
 
 
