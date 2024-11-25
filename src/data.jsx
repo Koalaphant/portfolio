@@ -131,6 +131,8 @@ const skills = [
   "Firebase",
   "Tailwind",
   "Vue.js",
+  "Prisma",
+  "Stripe",
 ];
 
 export { projects, skills };
