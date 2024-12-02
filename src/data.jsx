@@ -1,9 +1,41 @@
 import React from "react";
 import travelogImg from "./assets/travelog.jpeg";
 import ncNewsImg from "./assets/nc-news-desktop.webp";
-import reelGoodImg from "./assets/real-good-desktop.webp"; //
+import reelGoodImg from "./assets/real-good-desktop.webp";
+import splendEventImg from "./assets/splend-event.png";
 
 const projects = [
+  {
+    name: "SplendEvent 🎟️",
+    description: (
+      <>
+        <p className="paragraph-style">
+          SplendEvent is an events management platform designed for a wide
+          variety of events such as theatre performances, concerts, and stand-up
+          comedy shows. Over the past month, I’ve been working on this freelance
+          project for Tech Returners, and I’m excited to showcase it!
+        </p>
+        <p className="paragraph-style">
+          The platform allows users to create an account, browse, register, and
+          sign up for both free and paid events, add bookings to Google
+          Calendar, and access a personalised event history dashboard. Event
+          organisers benefit from an admin dashboard that allows them to manage
+          events and track sales and customer data.
+        </p>
+      </>
+    ),
+    languages_used: [
+      "TypeScript",
+      "Next.js",
+      "PostgreSQL",
+      "Prisma",
+      "Stripe",
+      "Clerk",
+    ],
+    git_url: "https://github.com/Koalaphant/events-platform",
+    site_url: "https://splendevent.vercel.app",
+    img_url: splendEventImg,
+  },
   {
     name: "Reel Good",
     description: (
@@ -71,19 +103,6 @@ const projects = [
     git_url: "https://github.com/Koalaphant/nc-news-proj",
     site_url: "https://nc-news-andrew.netlify.app/",
     img_url: ncNewsImg,
-    additional_info: (
-      <p
-        style={{
-          fontSize: "12px",
-          marginBottom: "20px",
-          fontWeight: "800",
-          color: "rgba(255, 255, 255, 0.7)",
-        }}
-      >
-        Please wait a moment while the backend deploys. This may take up to 30
-        seconds.
-      </p>
-    ),
   },
   {
     name: "NC News (Backend)",

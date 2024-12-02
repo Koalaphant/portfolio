@@ -66,6 +66,27 @@ const Home = () => {
             </p>
             <h2 className="section-titles">Professional Experience</h2>
 
+            <h3 className="job-title">
+              Freelance Project Consultant, Tech Returners
+            </h3>
+            <p className="job-date">09/2024–10/2024</p>
+            <div className="professional-experience-desc">
+              <p className="paragraph-style">
+                During my time with Tech Returners, I designed and developed
+                SplendEvent, a platform for managing events such as theatre
+                shows, concerts, and comedy performances. My role involved
+                creating user-friendly features, including personalised
+                dashboards for browsing and booking events, while ensuring
+                seamless functionality for both users and administrators. I
+                integrated secure payment systems to support paid events and
+                implemented tools to streamline event scheduling and management.
+                This project allowed me to sharpen my ability to deliver
+                user-centric solutions while collaborating effectively and
+                ensuring the platform met the needs of both users and event
+                organisers.
+              </p>
+            </div>
+
             <h3 className="job-title">Ticket Support, Ascend Agency</h3>
             <p className="job-date">05/2024 — 07/2024</p>
             <div className="professional-experience-desc">
