@@ -31,6 +31,7 @@ const projects = [
       "Prisma",
       "Stripe",
       "Clerk",
+      "Webhooks",
     ],
     git_url: "https://github.com/Koalaphant/events-platform",
     site_url: "https://splendevent.vercel.app",
